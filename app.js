@@ -10,6 +10,12 @@ new Vue({
   methods:{
     greet:function(time){
       return 'Hey, ' + this.job + ' ' + this.name +'! ' + 'Good ' + time + ' man!'
+    },
+    add:function(){
+      this.kills++;
+    },
+    subtract:function(){
+      this.kills--;
     }
   }
 });
