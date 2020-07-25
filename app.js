@@ -3,8 +3,9 @@ new Vue({
   data: {
     name: 'Josh',
     job: 'Ninja',
+    kills: '0',
     website: 'https://thenetninja.co.uk',
-    websiteTag:'<a href="https://thenetninja.co.uk">The Net Ninja, once again</a>'
+    websiteTag:'<a href="https://thenetninja.co.uk">Net Ninja</a>'
   },
   methods:{
     greet:function(time){

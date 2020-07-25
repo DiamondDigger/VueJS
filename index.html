@@ -13,6 +13,10 @@
       <p>Job: {{ job }}<p>
       <a v-bind:href="website">The Net Ninja</a>
       <p v-html="websiteTag"></p>
+
+      <button v-on:click="kills++">Add kills</button>
+      <button v-on:click="kills--">Substruct kills</button>
+      <p> Ninja kills: {{kills}}</p>
     </div>
 
     <script src="app.js"></script>
