@@ -8,9 +8,11 @@
   </head>
   <body>
     <div id='vue-app'>
-      <h1>{{ greet('night') }}
-      <p>Name: {{ name }}<p>
+      <h1>{{ greet('night') }}</h1>
+      <input type="text" v-bind:value="name"/>
       <p>Job: {{ job }}<p>
+      <a v-bind:href="website">The Net Ninja</a>
+      <p v-html="websiteTag"></p>
     </div>
 
     <script src="app.js"></script>
