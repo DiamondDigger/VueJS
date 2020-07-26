@@ -4,6 +4,8 @@ new Vue({
     name: 'Josh',
     job: 'Ninja',
     kills: 0,
+    weapon: '',
+    skill: '',
     x: 0,
     y: 0,
     website: 'https://thenetninja.co.uk',

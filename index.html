@@ -14,7 +14,8 @@
       <p>Job: {{ job }}<p>
       <a v-bind:href="website">The Net Ninja</a>
       <p v-html="websiteTag"></p>
-
+      <h2> Events </h2>
+      <h3> Mouse events </h3>
       <button v-on:click.once="add(1)">Add kills</button>
       <button v-on:click="subtract(1)">Subtract kills</button>
       <button v-on:dblclick="add(10)">Add kills</button>
@@ -24,12 +25,21 @@
 
       <a v-on:click.prevent="click" href="https://thenetninja.co.uk"> The Net Ninja </a>
 
+      <h3> Keyboard evetns </h3>
       <p>
       <label> Name:</label>
       <input type="text" v-on:keyup.enter="logName"/>
       <label> Job:</label>
       <input type="text" v-on:keyup.alt.enter="logJob"/>
       </p>
+
+      <label> Type your weapon:</label>
+      <input type="text"/ v-model="weapon">
+      <p> {{ weapon }} </p>
+      <label> Type your skill:</label>
+      <input type="text"/ v-model="skill">
+      <p> {{ skill }} </p>
+
     </div>
 
     <script src="app.js"></script>
