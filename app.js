@@ -25,6 +25,13 @@ new Vue({
     },
     click:function(){
       alert('You clicked me');
+    },
+    logName: function(){
+      console.log("You entered name");
+    },
+    logJob: function(){
+      console.log("You entered job");
     }
+
   }
 });

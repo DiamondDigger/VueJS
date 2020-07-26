@@ -24,6 +24,12 @@
 
       <a v-on:click.prevent="click" href="https://thenetninja.co.uk"> The Net Ninja </a>
 
+      <p>
+      <label> Name:</label>
+      <input type="text" v-on:keyup.enter="logName"/>
+      <label> Job:</label>
+      <input type="text" v-on:keyup.alt.enter="logJob"/>
+      </p>
     </div>
 
     <script src="app.js"></script>
