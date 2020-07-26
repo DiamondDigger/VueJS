@@ -7,6 +7,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   </head>
   <body>
+
     <div id='vue-app'>
       <h1>{{ greet('night') }}</h1>
       <input type="text" v-bind:value="name"/>
@@ -14,9 +15,13 @@
       <a v-bind:href="website">The Net Ninja</a>
       <p v-html="websiteTag"></p>
 
-      <button v-on:click="add">Add kills</button>
-      <button v-on:click="subtract">Subtract kills</button>
-      <p> Ninja kills: {{kills}}</p>
+      <button v-on:click="add(1)">Add kills</button>
+      <button v-on:click="subtract(1)">Subtract kills</button>
+      <button v-on:dblclick="add(10)">Add kills</button>
+      <button v-on:dblclick="subtract(10)">Subtract kills</button>
+      <p> Ninja kills: {{ kills }} </p>
+      <div id="canvas" v-on:mousemove="upgradeXY">{{ x }}, {{ y }}</div>
+
     </div>
 
     <script src="app.js"></script>
