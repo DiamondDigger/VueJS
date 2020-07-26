@@ -25,7 +25,7 @@
 
       <a v-on:click.prevent="click" href="https://thenetninja.co.uk"> The Net Ninja </a>
 
-      <h3> Keyboard evetns </h3>
+      <h3> Keyboard events </h3>
       <p>
       <label> Name:</label>
       <input type="text" v-on:keyup.enter="logName"/>
@@ -39,6 +39,13 @@
       <label> Type your skill:</label>
       <input type="text"/ v-model="skill">
       <p> {{ skill }} </p>
+
+      <button v-on:click='enemies++'>Add enemies</button>
+      <button v-on:click='difficulty++'>Add difficulty</button>
+      <p>enemies - {{ enemies }}</p>
+      <p>difficulty - {{ difficulty }}</p>
+      <p>Total + enemies = {{ addToEnemies }}</p>
+      <p>Total + difficulty = {{ addToDifficulty }}</p>
 
     </div>
 

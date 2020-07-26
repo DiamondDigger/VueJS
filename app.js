@@ -6,6 +6,9 @@ new Vue({
     kills: 0,
     weapon: '',
     skill: '',
+    enemies: 0,
+    difficulty: 0,
+    total: 0,
     x: 0,
     y: 0,
     website: 'https://thenetninja.co.uk',
@@ -33,7 +36,24 @@ new Vue({
     },
     logJob: function(){
       console.log("You entered job");
+    },
+    // addToEnemies: function(){
+    //   console.log('add enemies');
+    //   return this.total + this.enemies;
+    // },
+    // addToDifficulty: function(){
+    //   console.log('add difficulty');
+    //   return this.total + this.difficulty;
+    // }
+  },
+  computed:{
+    addToEnemies: function(){
+      console.log('add enemies');
+      return this.total + this.enemies;
+    },
+    addToDifficulty: function(){
+      console.log('add difficulty');
+      return this.total + this.difficulty;
     }
-
   }
 });
