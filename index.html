@@ -15,12 +15,14 @@
       <a v-bind:href="website">The Net Ninja</a>
       <p v-html="websiteTag"></p>
 
-      <button v-on:click="add(1)">Add kills</button>
+      <button v-on:click.once="add(1)">Add kills</button>
       <button v-on:click="subtract(1)">Subtract kills</button>
       <button v-on:dblclick="add(10)">Add kills</button>
       <button v-on:dblclick="subtract(10)">Subtract kills</button>
       <p> Ninja kills: {{ kills }} </p>
       <div id="canvas" v-on:mousemove="upgradeXY">{{ x }}, {{ y }}</div>
+
+      <a v-on:click.prevent="click" href="https://thenetninja.co.uk"> The Net Ninja </a>
 
     </div>
 
